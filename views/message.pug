@@ -1,0 +1,20 @@
+html
+	head
+		title Message
+		link(rel='stylesheet' href='../public/style.css')
+	body
+		div(class='container')
+			h4 Write your message here!
+			form(method='POST' action='/postingmessage')
+				div.input
+				span.label
+				p Name
+				input(type="text", name="author")
+				p Title
+				input(type="text", name="title")
+				p Message
+				input(class= 'bericht' type="text", name="body" autocomplete="off")
+				br
+				input(class='button' type="submit", value="submit")
+
+

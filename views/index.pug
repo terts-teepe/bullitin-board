@@ -1,0 +1,12 @@
+html
+	.container
+		a.btn-floating.btn-large.waves-effect.waves-light.red(href='/message' style='margin: 1.6em')
+			i.material-icons Add Message!
+		each post in posts
+			ul.yolo
+				li
+					em.right Title: #{post.title}
+				.yolo-body
+					em.right Posted by: #{post.author}
+				.yolo-body
+					span Message: #{post.body}
